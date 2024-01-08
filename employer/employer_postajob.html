@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Roboto&display=swap');
+
+        #sidebarMenu {
+            height: auto;
+            /* width:25vh; */
+        }
+
+        #company_name {
+            font-size: 20px;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .nav-link a {
+            color: blue;
+        }
+
+        .nav-link a:hover:not(.selected) {
+            color: #f00;
+        }
+
+        .nav-link:hover {
+            color: red;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="emplogo.png">
+    <title>JobHub | Post a Job</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="navbar navbar-dark sticky-top p-0"
+        style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); background-color: #DEDFE0;">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 ps-5" id="company_name" href="#"
+            style="color: black;">JobHub | Employer Panel</a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="background-color: black;"></span>
+        </button>
+        <div class="navbar-nav" style="background-color: #DEDFE0;">
+            <div class="nav-item text-nowrap">
+                <a class="nav-link px-3" href="#" style="color: black;">Log out<i
+                        class="bi bi-box-arrow-right ps-2"></i></a>
+            </div>
+        </div>
+    </header>
+    <!-- ==================================================heaader==================================================== -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-body-tertiary sidebar collapse">
+                <div class="position-sticky pt-3 sidebar-sticky">
+                    <ul class="nav flex-column" style="font-size: 16px;">
+                        <li class="nav-item" style="font-size: 24px; font-weight: 600;">
+                            <p class="nav-link" href="" style="color: black;">
+                                Dashboard
+                            </p>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="employer_dashboard.html" style="color: black;"
+                                onmouseover="this.style.color='#007BFF';" onmouseout="this.style.color='#000';">
+                                <i class="bi bi-house-door"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item" style="background-color:#8ca3f5; border-radius: 25px;">
+                            <a class="nav-link" href="employer_postajob.html" style="color: black;">
+                                <i class="bi bi-plus-circle"></i>
+                                Post a Job
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="employer_registercompany.html" style="color: black;"
+                                onmouseover="this.style.color='#007BFF';" onmouseout="this.style.color='#000';">
+                                <i class="bi bi-building-add"></i>
+                                Register Company
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="employer_viewcompany.html" style="color: black;" onmouseover="this.style.color='#007BFF';"
+                                onmouseout="this.style.color='#000';">
+                                <i class="bi bi-building-add"></i>
+                                View Company
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="employer_joblistings.html" style="color: black;" onmouseover="this.style.color='#007BFF';"
+                                onmouseout="this.style.color='#000';">
+                                <i class="bi bi-briefcase"></i>
+                                Job Listings
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="employer_viewprofile.html" style="color: black;" onmouseover="this.style.color='#007BFF';"
+                                onmouseout="this.style.color='#000';">
+                                <i class="bi bi-person-circle"></i>
+                                View Profile
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="employer_viewappplication.html" style="color: black;" onmouseover="this.style.color='#007BFF';"
+                                onmouseout="this.style.color='#000';">
+                                <i class="bi bi-envelope"></i>
+                                View Applications
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- ========================================================body============================================ -->
+
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <form action="#" name="searchfiler" method="post">
+                    <div
+                        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                        <h1 class="h5">[Text_Here]</h1>
+                    </div>
+                    <h4 class="h5">[Text_Here]</h4>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Job Title:</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Description:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Salary:</label>
+                        <input type="number" class="form-control" id="exampleFormControlInput1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Application valid:</label>
+                        <input type="date" class="form-control" id="exampleFormControlInput1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Catagory:</label>
+                        <select class="dropdown" name="dropdown">
+                            <option>Select One</option>
+                            <option value="option1">IT</option>
+                            <option value="option2">Accounting</option>
+                            <option value="option3">Option 3</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Job Level:</label>
+                        <select class="dropdown" name="dropdown">
+                            <option>Select One</option>
+                            <option value="option1">Intern</option>
+                            <option value="option2">Junior Level</option>
+                            <option value="option3">Mid Level</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Job Type:</label>
+                        <select class="dropdown" name="dropdown">
+                            <option>Select One</option>
+                            <option value="option1">FreeLancer</option>
+                            <option value="option2">Part Time</option>
+                            <option value="option3">Full Time</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Company Name:</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Company Location:</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Company Website:</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                            placeholder="www.xyz.com">
+                    </div>
+                    <div class="mb-3">
+                        <div class="mb-3" style="text-align: center;">
+                            <button type="submit" value="submit" style="background-color: #B6C6FF; border-radius: 5px; border:none; height: 4vh; width:30vw;"
+                            onmouseover="this.style.backgroundColor='#8ca3f5';"
+                            onmouseout="this.style.backgroundColor='#B6C6FF';">Post</button>
+                        </div>
+                    </div>
+                </form>
+            </main>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
